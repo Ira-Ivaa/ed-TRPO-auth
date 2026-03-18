@@ -1,46 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Аутентификация и Авторизация</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>Добро пожаловать</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Аутентификация и Авторизация</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Добро пожаловать</h1>
+        </header>
 
-    <!-- Экран выбора -->
-    <section id="welcome-screen">
-      <button onclick="showRegister()">Зарегистрироваться</button>
-      <button onclick="showLogin()">Войти</button>
-    </section>
+        <!-- Экран выбора -->
+        <section id="welcome-screen">
+            <button onclick="showRegister()">Зарегистрироваться</button>
+            <button onclick="showLogin()">Войти</button>
+        </section>
 
-    <!-- Форма регистрации -->
-    <section id="register-form" class="form-section" style="display: none">
-      <h2>Регистрация</h2>
-      <input id="reg-username" placeholder="Логин" />
-      <input id="reg-password" type="password" placeholder="Пароль" />
-      <button onclick="register()">Создать аккаунт</button>
-      <button onclick="showWelcome()">Назад</button>
-    </section>
+        <!-- Форма регистрации -->
+        <section id="register-form" class="form-section" style="display: none">
+            <h2>Регистрация</h2>
+            <input id="reg-username" placeholder="Логин" />
+            <input id="reg-password" type="password" placeholder="Пароль" />
+            <button onclick="register()">Создать аккаунт</button>
+            <button onclick="showWelcome()">Назад</button>
+        </section>
 
-    <!-- Форма входа -->
-    <section id="login-form" class="form-section" style="display: none">
-      <h2>Вход</h2>
-      <input id="login-username" placeholder="Логин" />
-      <input id="login-password" type="password" placeholder="Пароль" />
-      <button onclick="login()">Войти</button>
-      <button onclick="showWelcome()">Назад</button>
-    </section>
+        <!-- Форма входа -->
+        <section id="login-form" class="form-section" style="display: none">
+            <h2>Вход</h2>
+            <input id="login-username" placeholder="Логин" />
+            <input id="login-password" type="password" placeholder="Пароль" />
+            <button onclick="login()">Войти</button>
+            <button onclick="showWelcome()">Назад</button>
+        </section>
 
-    <!-- Защищённый контент -->
-    <section id="protected-content" style="display: none">
-      <h2>Привет, <span id="username"></span>!</h2>
-      <p>Это ваш защищённый контент.</p>
-      <ul id="posts-list"></ul>
-      <button onclick="logout()">Выйти</button>
-    </section>
-  </body>
+        <!-- Защищённый контент -->
+        <section id="protected-content" style="display: none">
+            <h2>Привет, <span id="username"></span>!</h2>
+            <p>Это ваш защищённый контент.</p>
+            <ul id="posts-list"></ul>
+            <button onclick="logout()">Выйти</button>
+        </section>
+    </body>
 </html>
